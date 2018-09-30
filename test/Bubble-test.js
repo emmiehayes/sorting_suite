@@ -27,11 +27,6 @@ describe('Bubble', function () {
     assert.deepEqual(bubble.sort(), [5, 7, 9]);
   });
 
-  it('should sort three numbers from smallest to largest', function () {
-    var bubble = new Bubble([7, 5, 9]);
-    assert.deepEqual(bubble.sort(), [5, 7, 9]);
-  });
-
   it('should sort group from smallest to largest, including double digits', function () {
     var bubble = new Bubble([7, 5, 9, 77, 66, 10, 91]);
     assert.deepEqual(bubble.sort(), [5, 7, 9, 10, 66, 77, 91]);
