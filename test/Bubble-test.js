@@ -28,4 +28,10 @@ describe('Bubble', function () {
     assert.deepEqual(bubble.numberSet, [7, 5]);
     assert.deepEqual(bubble.sort(), [5, 7]);
   });
+
+  it('should sort three numbers from smallest to largest', function () {
+    var bubble = new Bubble([7, 5, 9]);
+    assert.deepEqual(bubble.numberSet, [7, 5, 9]);
+    assert.deepEqual(bubble.sort(), [5, 7, 9]);
+  });
 });
